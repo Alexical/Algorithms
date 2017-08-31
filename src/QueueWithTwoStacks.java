@@ -1,4 +1,6 @@
 import edu.princeton.cs.algs4.Stack;
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
 
 public class QueueWithTwoStacks<Item> {
 
@@ -31,6 +33,16 @@ public class QueueWithTwoStacks<Item> {
 		if (out.isEmpty())
 			while (!in.isEmpty())
 				out.push(in.pop());
+	}
+	
+	public static void main(String[] args) {
+		QueueWithTwoStacks<String> queue = new QueueWithTwoStacks<String>();
+        while (!StdIn.isEmpty()) {
+            String item = StdIn.readString();
+            if (item.equals("-"))
+            	StdOut.println(queue.dequeue() + " ");
+            else queue.enqueue(item);
+        }
 	}
 	
 }
