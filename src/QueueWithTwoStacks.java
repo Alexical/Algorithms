@@ -5,7 +5,7 @@ import edu.princeton.cs.algs4.StdOut;
 // A queue implemented with two stacks.
 public class QueueWithTwoStacks<Item> {
 
-	// The two stacks.
+    // The two stacks.
     private Stack<Item> stack1 = new Stack<>();
     private Stack<Item> stack2 = new Stack<>();
 

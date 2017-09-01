@@ -5,7 +5,7 @@ import edu.princeton.cs.algs4.StdOut;
 // A stack with return-the-maximum operation.
 public class StackWithMax {
 
-	// The stack for the items.
+    // The stack for the items.
     private Stack<Integer> stack = new Stack<>();
 
     // The stack for the maximum items.
@@ -25,7 +25,7 @@ public class StackWithMax {
     public void push(int item) {
         stack.push(item);
         if (max.isEmpty() || item >= max.peek())
-        	max.push(item);
+            max.push(item);
     }
 
     // Removes and returns the last item on the stack.
